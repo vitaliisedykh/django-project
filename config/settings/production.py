@@ -3,7 +3,8 @@ import os
 from decouple import config
 
 DEBUG = False
-ALLOWED_HOSTS = ['yourdomain.com']  # замени на свой
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
 
 DATABASES = {
     'default': {

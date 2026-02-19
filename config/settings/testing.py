@@ -1,6 +1,6 @@
 from .base import *
 
-DEBUG = False
+DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -11,3 +11,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+STATIC_URL = '/static/'
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+SECRET_KEY = 'test-secret-key-for-testing-only'
